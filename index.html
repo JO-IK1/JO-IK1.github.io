@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="dark" />
+    <meta name="theme-color" content="#000000" />
+    <title>Скоро здесь будет сайт</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        width: 100%;
+        min-height: 100%;
+        margin: 0;
+        background: #000;
+      }
+
+      body {
+        min-height: 100svh;
+        display: grid;
+        place-items: center;
+        padding: clamp(16px, 4vw, 48px);
+      }
+
+      img {
+        display: block;
+        width: auto;
+        max-width: min(100%, 835px);
+        max-height: calc(100svh - clamp(32px, 8vw, 96px));
+        object-fit: contain;
+      }
+    </style>
+  </head>
+  <body>
+    <img src="cat.jpg" alt="Чёрно-белая фотография кота" />
+  </body>
+</html>
